@@ -6,20 +6,35 @@ var launched_count = 0;
 var key = “pen”;
 var value = “blue”;
 
+window.localStorage.setItem( key, value );
+
 var key = “headphones”;
 var value = “white”;
+
+
+window.localStorage.setItem( key, value );
+
 
 var key = “wallet”;
 var value = “brown”;
 
+window.localStorage.setItem( key, value );
+
+
 var key = “bottle”;
 var value = “black”;
+
+window.localStorage.setItem( key, value );
+
 
 var key = “pencil”;
 var value = “yellow”;
 
 
 window.localStorage.setItem( key, value );
+
+alert(window.localStorage.getItem( "pen"));
+
 
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
